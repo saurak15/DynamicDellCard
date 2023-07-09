@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingCard</title>
+    <link rel="stylesheet" href="card.css">
+    <script src="https://kit.fontawesome.com/56acc53598.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  </style>
+<body>
+    <div class="header">
+        <img src="dell-png-logo-0.png" alt="">
+        <h1> Welcome To Our DELL Products </h1>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    <div class="cardContainer">
+        <div class="inputContainer">
+            <h2> Enter The Price Of DELL Laptop </h2>
+            <h6> According To your personal Budget </h6>
+            <input type="text" placeholder="Enter The Price" class="input"> <br>
+            <button class="btn"> submit</button>
+        </div>
+        <div class="card">
+            <h2> WELCOME </h2>
+            <img src="peripherals_latop_latitude_3520_gallery_3.avif" alt="">
+            <h4> DELL Laptop </h4>
+            <div class="info">
+                <div class="l">
+                    <img src="dell-png-logo-0.png" alt="">
+
+                </div>
+                <div class="r">
+                    <p> i5-12-gen , 16 GB RAM , 512 GB SSD , Windows 11 </p>
+                    <div class="amount">
+                       <span> <i class="fa-solid fa-indian-rupee-sign"></i></span> <h2 class="price"> 57000</h2>
+                        
+                    </div>
+                    
+
+                </div>
+                
+                
+            </div>
+            <button > Add to Cart </button>
+
+        </div>
+    </div>
+    <script>
+        let input1 = document.querySelector("input").value;
+        let btn = document.querySelector(".btn");
+        let ele = document.querySelector(".price");
+        btn.addEventListener("click",function(){
+            ele.innerHTML=input1;
+
+
+
+        })
+
+
+
+
+    </script>
+    
+    
+</body>
+</html>
